@@ -1,0 +1,158 @@
+.header {
+  background-color: #fff;
+  border: 1px solid #f0f0f0;
+  position: fixed;
+  right: 0;
+  left: 0;
+  min-height: 50px;
+  width: 100%;
+}
+.header .container {
+  width: 1200px;
+  margin: 0 auto;
+}
+.header .container .left,
+.header .container .right {
+  width: 50%;
+  float: left;
+}
+.header .container .left .noLogin a:nth-child(1),
+.header .container .right .noLogin a:nth-child(1) {
+  font-size: 15px;
+  color: #969696;
+  margin-bottom: 0;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  line-height: 1.82857;
+  display: inline-block;
+  border-radius: 4px;
+}
+.header .container .left .noLogin a,
+.header .container .right .noLogin a {
+  width: 80px;
+  height: 38px;
+  line-height: 38px;
+  margin: 9px 5px 0 15px;
+  border: 1px solid rgba(236, 97, 73, 0.7);
+  border-radius: 20px;
+  font-size: 15px;
+  color: #ea6f5a;
+  background-color: transparent;
+  float: left;
+  text-align: center;
+  cursor: pointer;
+}
+.header .container .left .noLogin .on,
+.header .container .right .noLogin .on {
+  background: #ea6f5a;
+  color: #FFF;
+}
+.header .container .left h2 {
+  text-align: left;
+  color: #ea6f5a;
+}
+.header .container .right {
+  text-align: right;
+}
+.header .container .right > div {
+  display: inline-block;
+  margin-top: 6px;
+}
+.header .container .right .message {
+  border: none;
+}
+.header .container .right .avatar {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  display: block;
+  float: left;
+  margin: 6px 28px 8px 20px;
+  cursor: pointer;
+}
+.header .container .right .avatar img {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+}
+.header .container .right i:before {
+  content: "";
+  position: absolute;
+  top: 18px;
+  right: -14px;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 6px solid #999;
+}
+.header .container .right .Login .user {
+  height: 100%;
+  float: left;
+}
+.header .container .right .Login .message {
+  font-size: 15px;
+  color: #969696;
+  margin-bottom: 0;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  line-height: 38px;
+  display: inline-block;
+  border-radius: 4px;
+  width: 80px;
+  height: 38px;
+  background-color: transparent;
+  float: left;
+}
+.header .container .right .Login .on {
+  width: 80px;
+  height: 38px;
+  line-height: 38px;
+  margin: 9px 5px 0 15px;
+  border: 1px solid rgba(236, 97, 73, 0.7);
+  border-radius: 20px;
+  font-size: 15px;
+  background: #ea6f5a;
+  color: #FFF;
+  float: left;
+  text-align: center;
+  cursor: pointer;
+}
+.header .container .right .Login .dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 160px;
+  padding: 5px 0;
+  margin: 2px 0 0;
+  list-style: none;
+  font-size: 14px;
+  text-align: left;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  background-clip: padding-box;
+}
+.header .container .right .Login .open {
+  display: block;
+}
