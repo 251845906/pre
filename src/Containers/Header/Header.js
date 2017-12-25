@@ -38,13 +38,13 @@ class Header extends Component{
                     </a>         
                 </li>
             </ul></div><a className='on'>记仇</a></div>
-            : lon = <div className='noLogin'><Link to='SignIn'>登陆</Link><a>注册</a><a className='on'>记仇</a></div>
+            : lon = <div className='noLogin'><Link to='SignIn'>登陆</Link><Link to='SignUp'>注册</Link><a className='on'>记仇</a></div>
            
         return(
            <div>
                 <div className='header'>
                     <div className='container'>
-                        <div className='left'> <h2>咕噜咕噜·小本本</h2> </div>
+                        <div className='left'> <Link to='/'><h2>咕噜咕噜·小本本</h2></Link> </div>
                         <div className='right'>  {lon} </div>
                     </div>
                 </div>

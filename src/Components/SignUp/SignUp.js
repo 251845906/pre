@@ -1,46 +1,53 @@
-import React,{Component} from 'react';
+import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
-import './SignIn.css';
-class SignIn extends Component{
-    constructor(props){
+import './SignUp.css';
+class SignUp extends Component {
+    constructor(props) {
         super(props);
-        this.state={
+        this.state = {
 
         }
     }
-    render(){
-        return(
-            <div className="SignIn">
-              <div className='main'>
+    handleChange=(e)=>{
+        console.log(e.target.name)
+    }
+    outChange=()=>{
+
+    }
+    handSubmit=()=>{
+
+    }
+    render() {
+        return (
+            <div className="SignUp">
+                <div className='main'>
                     <h4 className="title">
                         <div className="normal-title">
-                            <Link  className="active" to="/SignIn">登录</Link>
+                            <Link to='SignIn'>登录</Link>
                             <b>·</b>
-                            <Link id="js-sign-up-btn" className="" to="/SignUp">注册</Link>
+                            <Link id="js-sign-up-btn" className="active" to="SignUp">注册</Link>
                         </div>
                     </h4>
                     <div className="js-sign-in-container">
+                        <div className="input-prepend restyle">
+                            <input placeholder="你的昵称" type="text"  name="user[nickname]" id="user_nickname" onChange={this.handleChange.bind(this)}/>
+                                <i className="iconfont ic-user"></i>
+                         </div>
 
-                       
                         <div className="input-prepend restyle js-normal">
-                            <input placeholder="手机号或邮箱" type="text" name="session[email_or_mobile_number]" id="session_email_or_mobile_number" />
+                            <input placeholder="手机号" type="text" name="session[email_or_mobile_number]" id="session_email_or_mobile_number" />
                             <i className="iconfont ic-user"></i>
                         </div>
 
 
 
                         <div className="input-prepend">
-                            <input placeholder="密码" type="password" name="session[password]" id="session_password" />
+                            <input placeholder="设置密码" type="password" name="session[password]" id="session_password" />
                             <i className="iconfont ic-password"></i>
                         </div>
-                        <input value="false" type="hidden" name="session[oversea]" id="session_oversea" />
+                       
 
-
-                        <div className="remember-btn">
-                            <input type="checkbox" value="true" defaultChecked="checked" name="session[remember_me]" id="session_remember_me" /><span>记住我</span>
-                        </div>
-
-                        <input type="submit" name="commit" value="登录" className="sign-in-button" data-disable-with="登录" />
+                        <input type="submit" name="commit" value="注册" className="sign-in-button"  />
 
 
                         <div className="more-sign">
@@ -53,7 +60,7 @@ class SignIn extends Component{
 
                         </div>
                     </div>
-              </div>
+                </div>
 
             </div>
         )
@@ -61,4 +68,4 @@ class SignIn extends Component{
 }
 
 
-export default SignIn ;
+export default SignUp;

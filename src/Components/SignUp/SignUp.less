@@ -1,0 +1,170 @@
+.SignUp {
+    height: 100%;
+    min-height: 750px;
+    text-align: center;
+    font-size: 14px;
+    background-color: #f1f1f1;
+    padding-bottom: 70px;
+    .main {
+        padding-top: 72px;
+        width: 400px;
+        margin: 160px auto 0;
+        padding: 50px 50px 30px;
+        background-color: #fff;
+        border-radius: 4px;
+        box-shadow: 0 0 8px rgba(0, 0, 0, .1);
+        vertical-align: middle;
+        display: inline-block;
+        .title {
+            margin: 0 auto 50px;
+            padding: 10px;
+            font-weight: 400;
+            color: #969696;
+            font-size: 18px;
+            .active {
+                font-weight: 700;
+                color: #ea6f5a;
+                border-bottom: 2px solid #ea6f5a;
+                padding: 10px;
+            }
+            b {
+                padding: 10px;
+            }
+            a {
+                padding: 10px;
+                color: #969696;
+            }
+        }
+        .js-sign-in-container {
+            margin: 0 auto;
+            width: 300px;
+            height: 367px;
+            .input-prepend {
+                position: relative;
+                width: 100%;
+                margin-bottom: 20px;
+                input {
+                    width: 80%;
+                    height: 50px;
+                    margin-bottom: 0;
+                    padding: 4px 12px 4px 35px;
+                    border: 1px solid #c8c8c8;
+                    border-radius: 0 0 4px 4px;
+                    background-color: hsla(0, 0%, 71%, .1);
+                    vertical-align: middle;
+                }
+                i {
+                    position: absolute;
+                    top: 14px;
+                    left: 10px;
+                    font-size: 18px;
+                    color: #969696;
+                    width: 20px;
+                    height: 30px;
+                    display: inline-block
+                }
+            }
+            .restyle {
+                margin-bottom: 0;
+                input {
+                    border-bottom: none;
+                    border-radius: 4px 4px 0 0;
+                }
+            }
+            .remember-btn {
+                float: left;
+                margin: 15px 0;
+            }
+        }
+        .more-sign {
+            margin-top: 30px;
+            span {
+                margin-left: 5px;
+                font-size: 15px;
+                color: #969696;
+                vertical-align: middle;
+            }
+            h6 {
+                position: relative;
+                font-size: 12px;
+                color: #b5b5b5;
+                margin: 0 0 20px;
+            }
+            h6:before,
+            h6:after {
+                content: "";
+                border-top: 1px solid #b5b5b5;
+                display: block;
+                position: absolute;
+                width: 60px;
+                top: 8px;
+            }
+            h6:before {
+                left: 30px;
+            }
+            h6:after {
+                right: 30px;
+            }
+            ul {
+                margin-bottom: 30px;
+                list-style: none;
+                li {
+                    margin: 0 3px;
+                    display: inline-block;
+                    a {
+                        width: 50px;
+                        height: 50px;
+                        background-color: hsla(0, 0%, 71%, .2);
+                        border-radius: 50%;
+                        line-height: 50px;
+                        display: block;
+                        .iconfont {
+                            font-family: iconfont!important;
+                            font-style: normal;
+                            font-weight: 400!important;
+                            -webkit-font-smoothing: antialiased;
+                            -moz-osx-font-smoothing: grayscale;
+                        }
+                        .iconfont {
+                            color: #fff;
+                        }
+                        i {
+                            font-size: 24px!important;
+                        }
+                    }
+                    .weibo {
+                        background-color: #e05244;
+                        .ic-weibo:before {
+                            content: "\E605";
+                        }
+                    }
+                    .weixin {
+                        background-color: #00bb29;
+                        .ic-wechat:before {
+                            content: "\E604";
+                        }
+                    }
+                    .qq {
+                        background-color: #498ad5;
+                        .ic-qq_connect:before {
+                            content: "\E603";
+                        }
+                    }
+                }
+            }
+        }
+        .sign-in-button {
+            width: 100%;
+            padding: 9px 18px;
+            font-size: 18px;
+            border: none;
+            border-radius: 25px;
+            color: #fff;
+            background: #42c02e;
+            cursor: pointer;
+            outline: none;
+            display: block;
+            clear: both;
+        }
+    }
+}
