@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Header from '../../Containers/Header/Header';
+
 import './Index.css';
 class Index extends Component {
     constructor(props) {
@@ -19,8 +19,8 @@ class Index extends Component {
     render() {
 
         return (
-            <div className="App">
-                <Header />
+            <div>
+               
             </div>
         );
     }

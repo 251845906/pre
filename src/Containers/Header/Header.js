@@ -1,21 +1,20 @@
 import React,{Component} from 'react';
+import {Link} from 'react-router-dom';
 import './Header.css';
 
 class Header extends Component{
     constructor(props){
             super(props);
             this.state={
-                login:true,
+                login:false,
                 menu:false
             }
     }
     handHoverIn=()=>{
         this.setState({menu:true})
-        console.log(1)
     }
     handHoverOut=()=>{
         this.setState({menu:false})
-        console.log(2)
     }
     render(){
         let lon;
@@ -24,22 +23,22 @@ class Header extends Component{
             <ul className={this.state.menu ? 'open dropdown-menu' :'dropdown-menu'} >
                 <li>
                     <a href="">
-                        <i className="iconfont ic-navigation-profile"></i><span>我的主页</span>
+                        <span>我的主页</span>
                     </a>         
                 </li>
                 <li>
                     <a href="">
-                        <i className="iconfont ic-navigation-mark"></i><span>我的收藏</span>
+                      <span>我的收藏</span>
                     </a>         
                 </li>
               
                 <li>
                     <a rel="nofollow"  href="">
-                        <i className="iconfont ic-navigation-signout"></i><span>退出</span>
+                       <span>退出</span>
                     </a>         
                 </li>
             </ul></div><a className='on'>记仇</a></div>
-            : lon =  <div className='noLogin'><a>登陆</a><a>注册</a><a className='on'>记仇</a></div>
+            : lon = <div className='noLogin'><Link to='SignIn'>登陆</Link><a>注册</a><a className='on'>记仇</a></div>
            
         return(
            <div>
