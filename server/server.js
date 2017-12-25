@@ -20,6 +20,7 @@ app.all('*', (req, res, next) => {
     res.header("Content-Type", "text/html;charset=utf-8");
     next();
 })
+console.log('数据库链接成功')
 app.route("/test").get((req, res) => {
     connection.query('SELECT * FROM t1', (err, rows, fields) => {
 
@@ -35,9 +36,9 @@ app.route("/test").get((req, res) => {
 
 
 
-app.listen(80, '127.0.0.1');
+app.listen(800, '127.0.0.1');
 //在server关闭的时候也关闭mysql连接
 app.on('close', () => {
     connection.end();
 });
-console.log('listening on port  80');
+console.log('listening on port  800');
